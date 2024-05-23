@@ -11,7 +11,7 @@ def zadacha1():
 
 def zadacha2():
     os.mkdir('image')
-    for i in os.listdir('forlab9'):
+    for i in os.listdir('lab9\image'):
         if i.endswith('.jpg') or i.endswith('.png'):
             jpg = Image.open(i)
             jpg = jpg.filter(ImageFilter.SHARPEN)
