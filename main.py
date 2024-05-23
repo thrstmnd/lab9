@@ -6,7 +6,7 @@ def zadacha1():
     os.mkdir('image')
     for i in os.listdir('lab9\image'):
         jpg = Image.open(i)
-        jpg = jpg.filter(ImageFilter.SHARPEN)
+        jpg = jpg.filter(ImageFilter.SMOOTH_MORE)
         jpg.save("C:\Users\user\PycharmProjects\lab9\image" + i + ".jpg")
 
 def zadacha2():
@@ -14,7 +14,7 @@ def zadacha2():
     for i in os.listdir('lab9\image'):
         if i.endswith('.jpg') or i.endswith('.png'):
             jpg = Image.open(i)
-            jpg = jpg.filter(ImageFilter.SHARPEN)
+            jpg = jpg.filter(ImageFilter.SMOOTH_MORE)
             jpg.save("C:\Users\user\PycharmProjects\lab9\image" + i + ".jpg")
 
 def zadacha3():
